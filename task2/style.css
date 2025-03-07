@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    user-select: none;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(19, 19, 19);
+}
+
+#inmain {
+    height: 550px;
+    width: 400px;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 20px;
+}
+
+#heading {
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: rgb(244, 250, 255);
+    text-shadow: 0px 0px 5px black;
+    font-size: 35px;
+}
+
+#result {
+    padding: 0px 30px;
+    font-size: 50px;
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    align-items: end;
+    letter-spacing: 2px;
+    overflow-wrap: anywhere;
+}
+
+#cross {
+    display: flex;
+    justify-content: flex-end;
+    height: 10%;
+}
+
+#cross button {
+    height: 62.25px;
+    width: 87.5px;
+    border-radius: 30px;
+    background-color: rgb(27, 27, 27);
+    color: aliceblue;
+    font-size: 30px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s linear;
+}
+
+#cross button:active {
+    background-color: rgb(146, 146, 146);
+}
+
+#keys {
+    padding: 10px;
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+#mainkeys {
+    height: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+#mainkeys button {
+    font-size: 30px;
+    font-weight: 500;
+    border-radius: 50%;
+    border: none;
+    background-color: rgb(27, 27, 27);
+    color: white;
+    cursor: pointer;
+    transition: all 0.5s linear;
+}
+
+#mainkeys button:active {
+    background-color: rgb(146, 146, 146);
+}
