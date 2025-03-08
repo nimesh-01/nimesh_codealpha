@@ -1,3 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+    user-select: none;
+    touch-action: manipulation;
+    /* Improves touch response */
+    -webkit-tap-highlight-color: transparent;
+    /* Removes blue highlight on tap */
+}
+
+
 body {
     background-color: #0e0e0e;
     color: rgb(252, 223, 184);
@@ -5,6 +17,16 @@ body {
     align-items: center;
     flex-direction: column;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+main {
+    margin-top: 20px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
 
 header {
@@ -27,11 +49,11 @@ header div {
 }
 
 header ul {
-    width: 40%;
+    width: 30%;
     display: flex;
     list-style: none;
     padding: 0px;
-    justify-content: space-between;
+    justify-content: space-around;
     text-transform: uppercase;
 }
 
@@ -175,6 +197,7 @@ header button:active {
     background-color: #2a1a1a;
     box-shadow: 0px 0px 10px rgb(252, 223, 184);
     transition: all 0.2s ease-in;
+    border-radius: 5px;
 }
 
 #sec3 div div,
@@ -185,9 +208,9 @@ header button:active {
     padding: 0;
 }
 
-#sec3  div:hover{
+#sec3 div:hover {
     box-shadow: 0px 0px 50px;
-  transform: scale(1.03);
+    transform: scale(1.03);
 }
 
 @media (min-width: 900px) {
@@ -433,33 +456,11 @@ header button:active {
 }
 
 /*# sourceMappingURL=style.css.map */
-* {
-    margin: 0;
-    padding: 0;
-    font-family: cursive;
-}
-
-body {
-    background-color: #0e0e0e;
-    color: rgb(252, 223, 184);
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-}
-
-main {
-    margin-top: 20px;
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-}
 
 main h1 {
     text-transform: uppercase;
+    margin: 30px;
+    font-size: 30px;
 }
 
 main #flex {
@@ -476,6 +477,7 @@ main #flex div {
     background-color: #0e0e0e;
     box-shadow: 0px 0px 10px rgb(252, 223, 184);
     transition: all 0.2s ease-in;
+    border-radius: 5px;
 }
 
 main #flex div h2 {
@@ -546,6 +548,7 @@ main #flex div:hover {
 
 #m3 {
     width: 80%;
+    margin-top: 50px;
 }
 
 #m3 h2 {
@@ -689,3 +692,121 @@ main #flex div:hover {
 }
 
 /*# sourceMappingURL=talk.css.map */
+#m2 {
+    margin-top: 50px;
+}
+
+#m2 .grid {
+    width: 90%;
+    display: grid;
+    gap: 40px;
+}
+
+#m2 #heading {
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+#m2 .grid a {
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgb(22, 22, 22);
+    align-items: center;
+    box-shadow: 0px 0px 10px rgb(252, 223, 184);
+    transition: all 0.2s ease-in;
+    text-decoration: none;
+}
+
+#m2 .grid a:hover {
+    box-shadow: 0px 0px 30px rgb(252, 223, 184);
+    transform: scale(1.03);
+}
+
+#m2 .grid a video {
+    height: 80%;
+    width: 100%;
+}
+
+#m2 .grid a h1 {
+    height: 10%;
+    margin: 0;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(202, 178, 145);
+}
+
+@media (min-width:1200px) {
+    #m2 {
+        width: 1200px;
+    }
+
+    #m2 .grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #m2 .grid a {
+        height: 500px;
+    }
+}
+
+@media (min-width:900px) and (max-width:1200px) {
+    #m2 {
+        width: 900px;
+    }
+
+    #m2 .grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #m2 .grid a {
+        height: 400px;
+    }
+}
+
+@media (min-width:700px) and (max-width:900px) {
+    #m2 {
+        width: 700px;
+    }
+
+    #m2 .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #m2 .grid a {
+        height: 400px;
+    }
+}
+
+@media (min-width:500px) and (max-width:700px) {
+    #m2 {
+        width: 470px;
+
+    }
+
+    #m2 .grid {
+        grid-template-columns: 1fr;
+    }
+
+    #m2 .grid a {
+        height: 500px;
+    }
+}
+
+@media(max-width:500px) {
+    #m2 {
+        width: 320px;
+
+    }
+
+    #m2 .grid {
+        grid-template-columns: 1fr;
+    }
+
+    #m2 .grid a {
+        height: 400px;
+    }
+}
